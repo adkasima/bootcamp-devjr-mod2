@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bootcamp DevJr - Sistema de Assinaturas</title>
         <style>
+            :root {
+                font-size: 62.5%;
+            }
             body {
                 background-color: #f5f5f5;
                 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -20,21 +23,25 @@
             }
 
             .header {
-                padding: 40px;
+                padding: 4rem;
             }
 
             .header-title {
                 color: #006666;
-                font-size: 32px;
+                font-size: 3.2rem;
                 font-weight: 700;
-                margin-bottom: 15px;
+                margin-bottom: 1.5rem;
             }
 
             .header-subtitle {
                 color: #008a89;
-                font-size: 20px;
+                font-size: 2rem;
                 font-weight: 500;
-                margin-bottom: 15px;
+                margin-bottom: 1.5rem;
+            }
+
+            .header-paragraph {
+                font-size: 1.8rem;
             }
 
             .flex-container {
@@ -42,39 +49,39 @@
                 justify-content: space-around;
                 color: #fff;
                 background-color: #006a6a;
-                font-size: 16px;
+                font-size: 1.6rem;
             }
 
             .col-1 {
                 width: 50%;
-                padding: 20px;
+                padding: 2rem;
             }
 
             .col-1 .title {
                 text-align: center;
-                margin-bottom: 20px;
+                margin-bottom: 2rem;
             }
 
             .col-1 span:nth-child(1) {
-                font-size: 32px;
+                font-size: 3.2rem;
                 font-weight: 700;
-                margin-bottom: 20px;
+                margin-bottom: 2rem;
             }
 
             .col-1 span:nth-child(2) {
-                font-size: 18px;
+                font-size: 1.8rem;
                 font-style: italic;
-                margin-left: 15px;
+                margin-left: 1.5rem;
             }
 
             .button {
                 margin-top: 20px;
-                font-size: 16px;
+                font-size: 1.6rem;
                 cursor: pointer;
                 background-color: #cccccc;
                 color: #006b6b;
                 width: 100%;
-                padding: 15px 32px;
+                padding: 1.5rem 3.2rem;
                 border-radius: 4px;
                 border: none;
             }
@@ -86,13 +93,33 @@
 
             .col-2 {
                 width: 50%;
-                padding: 10px 20px;
+                padding: 1rem 2rem;
 
                 background-color: #008a89;
             }
 
             .image-group {
                 text-align: center;
+            }
+
+            @media screen and (max-width: 620px) {
+                :root {
+                    font-size: 32.5%;
+                }
+
+                .flex-container {
+                    flex-direction: column;
+                }
+
+                .col-1,
+                .col-2 {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+
+                .container {
+                    width: 95%;
+                }
             }
         </style>
     </head>
@@ -105,7 +132,7 @@
                     Faça a sua assinatura agora e ganhe 30% de desconto!
                 </div>
 
-                <div>
+                <div class="header-paragraph">
                     Faça parte da nossa comunidade de desenvolvedores. <br />
                     Tenha suporte de nossa equipe e cresça mais rápido na sua
                     carreira!
@@ -118,8 +145,8 @@
                     <div>
                         <span>R$ 99,99</span>
                         <span>por mês.</span>
-                        Cancele a qualquer momento.
                     </div>
+                    <div>Cancele a qualquer momento.</div>
 
                     <button class="button">Assine agora</button>
                 </div>
