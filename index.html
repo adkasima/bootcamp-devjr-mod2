@@ -1,68 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootcamp DevJr - Sistema de Assinaturas</title>
-    <style>
-      body {
-        background-color: #f5f5f5;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootcamp DevJr - Sistema de Assinaturas</title>
+        <style>
+            body {
+                background-color: #f5f5f5;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
 
-      .container {
-        background-color: #e9e9e9;
-        margin: auto;
-        width: 600px;
-        box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        overflow: hidden;
-      }
+            .container {
+                background-color: #e9e9e9;
+                margin: auto;
+                width: 600px;
+                box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                overflow: hidden;
+            }
 
-      .header {
-        padding: 40px;
-      }
+            .header {
+                padding: 40px;
+            }
 
-      .header-title {
-        color: #006666;
-        font-size: 32px;
-        font-weight: 700;
-        margin-bottom: 15px;
-      }
+            .header-title {
+                color: #006666;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
 
-      .header-subtitle {
-        color: #3c8d8b;
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 15px;
-      }
+            .header-subtitle {
+                color: #008a89;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
 
-      .flex-container {
-        display: flex;
-        background-color: #006a6a;
-        justify-content: space-around;
-        padding: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="header-title">Entre para a nosssa comunidade!</div>
+            .flex-container {
+                display: flex;
+                justify-content: space-around;
+                color: #fff;
+                background-color: #006a6a;
+                font-size: 18px;
+            }
 
-        <div class="header-subtitle">
-          Faça a sua assinatura agora e ganhe 30% de desconto!
+            .col-1 {
+                width: 50%;
+                padding: 20px;
+            }
+
+            .col-1 .title {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .col-1 span:nth-child(1) {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .col-1 span:nth-child(2) {
+                font-size: 18px;
+                font-style: italic;
+                margin-left: 15px;
+            }
+
+            .button {
+                margin-top: 20px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #cccccc;
+                color: #006b6b;
+                width: 100%;
+                padding: 15px 32px;
+                border-radius: 4px;
+                border: none;
+            }
+
+            .button:hover {
+                background-color: #e9e9e9;
+                transition: all 0.4s;
+            }
+
+            .col-2 {
+                width: 50%;
+                padding: 20px;
+
+                background-color: #008a89;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-title">Entre para a nosssa comunidade!</div>
+
+                <div class="header-subtitle">
+                    Faça a sua assinatura agora e ganhe 30% de desconto!
+                </div>
+
+                <div>
+                    Faça parte da nossa comunidade de desenvolvedores. <br />
+                    Tenha suporte de nossa equipe e cresça mais rápido na sua
+                    carreira!
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="col-1">
+                    <div class="title">Assinatura mensal:</div>
+
+                    <div>
+                        <span>R$ 99,99</span>
+                        <span>por mês.</span>
+                        Cancele a qualquer momento.
+                    </div>
+
+                    <button class="button">Assine agora</button>
+                </div>
+                <div class="col-2">
+                    <div>Coluna 2</div>
+                </div>
+            </div>
         </div>
-
-        <div>
-          Faça parte da nossa comunidade de desenvolvedores. <br />
-          Tenha suporte de nossa equipe e cresça mais rápido na sua carreira!
-        </div>
-      </div>
-      <div class="flex-container">
-        <div>Coluna 1</div>
-        <div>Coluna 2</div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
